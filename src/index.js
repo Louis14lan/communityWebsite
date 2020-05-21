@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Router from './Router';
+import '~/common.less'
 
-import Hello from "./pages/Hello";
-
-ReactDOM.render(<Hello />,document.getElementById("app"))
-
+ReactDOM.render(<Router />, document.getElementById("app"))
