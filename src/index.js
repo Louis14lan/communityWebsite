@@ -1,7 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './assets/style/common.css'
-import App from "./App";
+import { HashRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom'
 
-ReactDOM.render(<App />, document.getElementById("app"))
+import ResetPassword from '@/pages/password/ResetPassword'
+import ForgetPassword from '@/pages/password/ForgetPassword'
+import Login from '@/pages/Login/index'
+/* 引入公共样式 */
+import './assets/style/common.css'
+
+class App extends React.Component {
+  render() {
+    return (
+      <Switch>
+        <Route path='/login' component={Login}></Route>
+        <Route path='/resetPassword' component={ResetPassword}></Route>
+        <Route path='/forgetPassword' component={ForgetPassword}></Route>
+        <Redirect to="/login" />
+      </Switch>
+    )
+  }
+}
+ReactDOM.render(<Router><App /></Router>, document.getElementById("app"))
 

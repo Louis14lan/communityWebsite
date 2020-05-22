@@ -1,10 +1,8 @@
 import React from 'react'
 import './index.css'
-import { Card, Form, Input, Button, Checkbox } from 'antd'
+import { Card, Form, Input, Button } from 'antd'
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-
-
-
+import { Link } from 'react-router-dom'
 class Login extends React.Component {
     constructor(props) {
         super(props)
@@ -29,7 +27,6 @@ class Login extends React.Component {
     componentWillMount() {
         this.canvas = React.createRef()
     }
-
     componentDidMount() {
         this.drawPic()
     }
@@ -211,7 +208,7 @@ class Login extends React.Component {
                         </Button>
                     </Form.Item>
                     <Form.Item className="login_bottom">
-                        <a className="login-form-forgot" href=""> 忘记密码？ </a>
+                        <Link className="login-form-forgot" to="/forgetPassword"> 忘记密码？ </Link>
                         <span> 没有账号？<a href="">注册</a> </span>
                     </Form.Item>
                 </Form>
