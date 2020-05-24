@@ -1,12 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { HashRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom'
-
 import ResetPassword from '@/pages/password/ResetPassword'
 import ForgetPassword from '@/pages/password/ForgetPassword'
-import Login from '@/pages/Login/index'
+import Login from '@/pages/login/index'
 /* 引入公共样式 */
-import './assets/style/common.css'
+import '~/common.less'
 
 class App extends React.Component {
   render() {
@@ -21,4 +20,3 @@ class App extends React.Component {
   }
 }
 ReactDOM.render(<Router><App /></Router>, document.getElementById("app"))
-

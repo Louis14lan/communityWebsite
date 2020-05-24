@@ -23,13 +23,17 @@
     "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
-    "babel-loader": "^8.1.0",
+    "antd": "^4.2.4",
+    "babel-core": "^7.0.0",
+    "babel-loader": "^7.1.5",
     "babel-plugin-import": "^1.13.0",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
     "less": "^3.11.1",
     "less-loader": "^6.1.0",
+    "react": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.2.1",
     "url-loader": "^4.1.0",
@@ -39,9 +43,12 @@
   },
   "dependencies": {
     "antd": "^4.2.4",
+    "babel-plugin-import": "^1.13.0",
+    "css-loader": "^3.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "style-loader": "^1.2.1"
   }
 }
